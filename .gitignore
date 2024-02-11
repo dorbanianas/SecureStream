@@ -1,0 +1,5 @@
+data/*
+__pycache__/
+models/*
+venv/
+traffic_data/*
