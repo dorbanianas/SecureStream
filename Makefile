@@ -18,10 +18,15 @@ install:
 setup: venv install
 	@echo "Project setup completed successfully."
 
+# Run the anomaly detection script
+run_anomaly_detection:
+	sh src/run_anomaly_detection.sh
+
 # Help target to display available Makefile targets
 help:
 	@echo "Available targets:"
 	@echo "  - venv: Create Python virtual environment"
 	@echo "  - install: Install required libraries from requirements.txt"
 	@echo "  - setup: Set up the project (create venv, install libraries, and perform configuration)"
+	@echo "  - run_anomaly_detection: Run the anomaly detection script"
 	@echo "  - help: Display available Makefile targets"
